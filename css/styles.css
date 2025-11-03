@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(110, 192, 243);
+  font-family: "Alan Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+
+  background-color: #0586b9;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+main.principal {
+  flex: 1;
+  background-color: #0797ea;
+  text-align: center;
+  padding: 2rem;
+}
+
+.parrafo {
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border: 4px dotted black;
+}
+
+footer {
+  background-color: #033548;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .fecha {
+  position: absolute;
+  right: 1rem;
+  margin: 0;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  margin: 20px auto;
+}
+
+.col {
+  background-color: aqua;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 1000px;
+}
+
+@media (min-width:768px) {
+  nav ul {
+    flex-direction: column;
+
+  }
+}
+
+@media (min-width:1024px) {
+
+  nav ul {
+    flex-direction:row;
+  }
+}
+
+@media (min-width 0px) {
+  .col {
+    flex-direction: column;
+
+  }
+}
+
+nav {
+  background: linear-gradient(to right, blue, white);
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 20px;
+}
+
+nav a {
+  color: rgb(1, 44, 77);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: yellow;
+}
+.menu-toggle{
+  display: none;
+}
+.menu-icon{
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  position:absolute;
+  right: 1rem;
+  top: 1rem;
+}
+@media(min-width:0px) and (max-width:767px){
+  .menu-icon{
+    display: block;
+  }
+.navbar{
+  display: none;
+  flex-direction:column;
+  background-color: #eff3f4;
+}
+.navbar ul{
+  flex-direction: column;
+  align-items: center;
+}
+.menu-toggle:checked+.menu-icon+.navbar{
+  display: flex;
+}
+footer{
+  display: none;
+}
+}
+.carowsel {
+  width:100%;
+  margin:0autor
+}
+.carowsel img{
+  width:100%
+  height:40rem
+  object-ft:cover
+}
